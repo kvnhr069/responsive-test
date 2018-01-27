@@ -128,14 +128,7 @@
     <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('.menu').click(function(){
-                $('.mainnav-items').toggleClass('active');
-            })
-        })
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.menu').touchstart(function(){
+            $('.menu').on('click touchstart')(function(){
                 $('.mainnav-items').toggleClass('active');
             })
         })
