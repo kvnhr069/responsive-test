@@ -1,3 +1,6 @@
+/*======= GENERAL =======*/
+/*=======================*/
+
 @font-face {
     font-family: hades;
     src: url(../fonts/Hades.ttf);
@@ -18,6 +21,9 @@
     padding: 0;
 }
 
+
+
+
 /*==========================*/
 /*======= INFO PANEL =======*/
 /*==========================*/
@@ -31,7 +37,6 @@
 }
 
 .info-panel {
-    width: 55%;
     display: flex;
     margin: auto;
     justify-content: space-between;
@@ -39,7 +44,19 @@
 
 .info-left {
     float:left;
+    width: 500px;
 }
+
+.info-left li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.info-left li a:hover {
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+}
+
 
 .info-right {
     float:right;
@@ -60,6 +77,9 @@
 .info-right a {
     margin-left: 1em;
 }
+
+
+
 
 /*==================================*/
 /*======= SOCIAL MEDIA ICONS =======*/
@@ -135,6 +155,9 @@
     color: #55acee;
 }
 
+
+
+
 /*========================*/
 /*======= MAIN NAV =======*/
 /*========================*/
@@ -190,6 +213,8 @@
 }
 
 
+
+
 /*======================*/
 /*======= BANNER =======*/
 /*======================*/
@@ -216,7 +241,9 @@
 
 
 
-
+/*=======================*/
+/*======= SECTION =======*/
+/*=======================*/
 
 .section1 {
     width: 100%;
@@ -278,12 +305,9 @@
 
 
 
-
-
-
-
-
-/*-----Settings for Image Grid-----*/
+/*===========================*/
+/*======= GRID SLIDER =======*/
+/*===========================*/
 
 .sr #slide { visibility: hidden; }
 
@@ -355,7 +379,10 @@
 }
 
 
-/*-----Grid effects-----*/
+
+
+/*============================*/
+/*======= GRID EFFECTS =======*/
 
 .small.one {
     background: url(https://images.unsplash.com/photo-1504532724559-22878efd533a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f50a07dc64c3d92f605cebee5cfa600c&auto=format&fit=crop&w=2134&q=80);
@@ -694,11 +721,6 @@
     background-color: rgb(255, 255, 255);
     color: rgba(255, 255, 255, 0);
 }
-
-
-
-
-
 
 
 
