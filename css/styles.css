@@ -1,0 +1,163 @@
+@font-face {
+    font-family: hades;
+    src: url(../fonts/Hades.ttf);
+}
+
+@font-face {
+    font-family: aventura;
+    src: url(../fonts/aventura.otf);
+}
+
+@font-face {
+    font-family: kust;
+    src: url(../fonts/kust.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*======= INFO PANEL =======*/
+
+.info {
+    margin: 0;
+    padding: 0;
+    background: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+}
+
+.info-panel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info ul {
+    height: 1.5vh;
+}
+
+.info ul li {
+    display: inline;
+}
+
+.info li a {
+    color: white;
+}
+
+.info-right a {
+    margin-left: 1em;
+}
+
+
+/*======= MAIN NAV =======*/
+
+.main-nav {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.479);
+}
+
+.mainnav-items {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    list-style: none;
+}
+
+
+.mainnav-items a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-items {
+    font-size: 16px;
+    display: inline;
+    flex-grow: 3;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    font-family: aventura;
+    text-transform: uppercase;
+}
+
+.nav-items:hover {
+    background-color: rgba(0, 0, 0, 0.479);
+    transition: ease-in-out 200ms;
+    box-shadow: 1px 0 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-items a:active {
+    background-color: rgba(0, 0, 0, 0.479);
+    box-shadow: 1px 0 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.banner {
+    background: linear-gradient(to bottom, rgba(0, 217, 255, 0.411), transparent),
+                url(https://images.unsplash.com/photo-1468082547792-d37c6c74003e?ixlib=rb-0.3.5&s=3d0350b28df366b170719a7d6c07aa5e&auto=format&fit=crop&w=1955&q=80);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+}
+
+.banner-title {
+    font-family: kust;
+    color: white;
+    margin-top: 0.7em;
+    color: rgb(26, 26, 26);
+}
+
+
+
+
+
+
+
+
+/* ======= MEDIA QUERIES ======= */
+
+
+/*=====SMARTPHONES=====*/
+/*== 480px ==*/
+@media only screen and (max-width : 480px) {
+    .mainnav-items {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*== 481px - 767px ==*/
+@media only screen and (min-width: 481px) and (max-width : 767px) {
+        .mainnav-items {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+}
+
+@media only screen and (min-width : 768px) and (max-width: 1024px) {
+    .mainnav-items {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+/*===== TABLETS AND LAPTOPS =====*/
+@media only screen and (min-width : 1024px) {
+}
+
+@media only screen and (min-width : 1440px) {
+}
+
+@media only screen and (min-width : 1920px) {
+}
