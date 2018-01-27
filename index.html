@@ -41,6 +41,11 @@
                 </div>
             </div>
             <div class="main-nav">
+                
+                    <div class="toggle">
+                        <i class="fa fa-bars menu" aria-hidden="true"></i>
+                    </div>
+                        
                 <ul class="mainnav-items">
                     <li class="nav-items"><a href="index.html">Home</a></li>
                     <li class="nav-items"><a href="travel-guide.html">Travel Guide</a></li>
@@ -69,6 +74,16 @@
 
     </footer>
 
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('.mainnav-items').toggleClass('active');
+            })
+        })
+    </script>
 
 
   </body>
