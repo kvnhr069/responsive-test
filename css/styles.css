@@ -18,20 +18,31 @@
     padding: 0;
 }
 
+/*==========================*/
 /*======= INFO PANEL =======*/
+/*==========================*/
 
 .info {
     margin: 0;
     padding: 0;
-    background: rgb(20, 20, 20);
+    background: rgba(20, 20, 20, 0.692);
     display: flex;
     justify-content: center;
 }
 
 .info-panel {
-    width: 100%;
+    width: 55%;
     display: flex;
+    margin: auto;
     justify-content: space-between;
+}
+
+.info-left {
+    float:left;
+}
+
+.info-right {
+    float:right;
 }
 
 .info ul {
@@ -50,8 +61,83 @@
     margin-left: 1em;
 }
 
+/*==================================*/
+/*======= SOCIAL MEDIA ICONS =======*/
+/*==================================*/
 
+.facebook {
+    text-align: center;
+    width: 2.5em;
+    align-self: center;
+}
+
+.facebook a {
+    color: white;
+}
+
+.facebook a:hover {
+    color: #3b5998;
+}
+
+.instagram {
+    text-align: center;
+    width: 2.5em;
+    align-self: center;
+}
+
+.instagram a {
+    color: white;
+}
+
+.instagram a:hover {
+    color: #e95950;
+}
+
+.youtube {
+    text-align: center;
+    width: 2.5em;
+    align-self: center;
+}
+
+.youtube a {
+    color: white;
+}
+
+.youtube a:hover {
+    color: #ff0000;
+}
+
+.googleplus {
+    text-align: center;
+    width: 2.5em;
+    align-self: center;
+}
+
+.googleplus a {
+    color: white;
+}
+
+.googleplus a:hover {
+    color: #dd4b39;
+}
+
+.twitter {
+    text-align: center;
+    width: 2.5em;
+    align-self: center;
+}
+
+.twitter a {
+    color: white;
+}
+
+.twitter a:hover {
+    color: #55acee;
+}
+
+/*========================*/
 /*======= MAIN NAV =======*/
+/*========================*/
 
 .toggle {
     width: 100%;
@@ -74,7 +160,6 @@
     margin: auto;
     list-style: none;
 }
-
 
 .mainnav-items a {
     color: white;
@@ -105,6 +190,10 @@
 }
 
 
+/*======================*/
+/*======= BANNER =======*/
+/*======================*/
+
 .banner {
     background: linear-gradient(to bottom, rgba(0, 217, 255, 0.411), transparent),
                 url(https://images.unsplash.com/photo-1468082547792-d37c6c74003e?ixlib=rb-0.3.5&s=3d0350b28df366b170719a7d6c07aa5e&auto=format&fit=crop&w=1955&q=80);
@@ -115,9 +204,12 @@
 }
 
 .banner-title {
+    width: 100%;
+    text-align: center;
     font-family: kust;
+    font-size: 6em;
     color: white;
-    margin-top: 0.7em;
+    margin-top: 0.5em;
     color: rgb(26, 26, 26);
 }
 
@@ -126,16 +218,78 @@
 
 
 
+.section1 {
+    width: 100%;
+    padding: 0;
+    padding-top: 7em;
+}
+
+.spotoftheweek {
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+    background: rgb(243, 243, 243);
+    display: flex;
+}
+
+.sotw-left {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#title-section1 {
+    text-align: left;
+    margin-bottom: 0.5em;
+    font-family: aventura;
+    text-transform: uppercase;
+}
+
+#kohphangan {
+    height: 300px;
+    margin-left: 5em;
+    margin-top: 0.5em;
+    background: url(../img/svg/sunandwaves.svg);
+    background-size: 300 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: auto;
+
+}
+
+.sotw-right {
+    margin-left: 2em;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 10em;
+    text-align: justify;
+}
+
+.more-button {
+    width: 300px;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-bottom: 2em;
+}
 
 
-/* ======= MEDIA QUERIES ======= */
 
+
+
+
+
+/*=============================*/
+/*======= MEDIA QUERIES =======*/
+/*=============================*/
 
 /*=====SMARTPHONES=====*/
 /*== 480px ==*/
 @media only screen and (max-width : 480px) {
 
-    .row.info {
+    .info {
         display: none;
     }
 
@@ -163,6 +317,44 @@
     .banner-title {
         margin-top: 0;
     }
+
+    .section1 {
+        padding-top: 0;
+        border-top: 5px solid black;
+    }
+
+    .spotoftheweek {
+        box-shadow: none;
+        background: white;
+        width: 90%;
+    }
+
+    .sotw-left {
+        margin-top: 3em;
+    }
+
+    #kohphangan {
+        margin: auto;
+        width: 20em;
+        height: auto;
+    }
+
+    .sotw-right {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #title-section1 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .more-button {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
@@ -172,7 +364,7 @@
 /*== 481px - 767px ==*/
 @media only screen and (min-width: 481px) and (max-width : 767px) {
 
-    .row.info {
+    .info {
         display: none;
     }
 
@@ -196,23 +388,327 @@
         display: flex;
         flex-direction: column;
     }
-    
+
+
+
+    .section1 {
+        padding-top: 0;
+        border-top: 5px solid black;
+    }
+
+    .spotoftheweek {
+        box-shadow: none;
+        background: white;
+        width: 90%;
+    }
+
+    .sotw-left {
+        margin-top: 3em;
+    }
+
+    #kohphangan {
+        margin: auto;
+        width: 20em;
+        height: auto;
+    }
+
+    .sotw-right {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #title-section1 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .more-button {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
 }
 
 @media only screen and (min-width : 768px) and (max-width: 1024px) {
     .mainnav-items {
         width: 100%;
-        margin: auto;
+        margin: 0;
+    }
+
+    .info-panel {
+        width: 96%;
+    }
+
+    .section1 {
+        padding-top: 0;
+        border-top: 5px solid black;
+    }
+
+    .spotoftheweek {
+        margin-top: 2em;
+        width: 90%;
+        flex-direction: column;
+        height: 50em;
+    }
+
+    .sotw-left {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #kohphangan {
+        align-self: center;
+        margin: 0;
+        width: 25em;
+        height: auto;
+    }
+
+    .sotw-right {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #title-section1 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .more-button {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 
 /*===== TABLETS AND LAPTOPS =====*/
-@media only screen and (min-width : 1024px) {
+@media only screen and (min-width : 1024px) and (max-width: 1439px) {
+
+    .info-panel {
+        width: 92.5%;
+    }
+
+    .mainnav-items {
+        width: 100%;
+    }
+
+    .section1 {
+        width: 100%;
+        padding: 0;
+        padding-top: 3em;
+    }
+    
+    .spotoftheweek {
+        height: 60%;
+        width: 90%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: auto;
+        background: rgb(243, 243, 243);
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10em;
+    }
+    
+    .sotw-left {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+    }
+    
+    #title-section1 {
+        margin-top: 0.5em;
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-family: aventura;
+        text-transform: uppercase;
+        font-size: 2.5em;
+    }
+    
+    #kohphangan {
+        height: 15em;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sotw-right {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+    }
+    
+    .sotw-text {
+        width: 90%;
+        margin: auto;
+    }
+
+    .more-button {
+        width: 30em;
+        margin-top: 3em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+    }
+
 }
 
-@media only screen and (min-width : 1440px) {
+@media only screen and (min-width : 1440px) and (max-width: 1919px) {
+
+    .info-panel {
+        width: 73.3%;
+    }
+
+    .mainnav-items {
+        width: 80%;
+    }
+
+    
+    .section1 {
+        width: 100%;
+        padding: 0;
+        padding-top: 3em;
+    }
+    
+    .spotoftheweek {
+        height: 60%;
+        width: 70%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: auto;
+        background: rgb(243, 243, 243);
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10em;
+    }
+    
+    .sotw-left {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+    }
+    
+    #title-section1 {
+        margin-top: 0.5em;
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-family: aventura;
+        text-transform: uppercase;
+        font-size: 2.5em;
+    }
+    
+    #kohphangan {
+        height: 15em;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sotw-right {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+    }
+    
+    .sotw-text {
+        width: 90%;
+        margin: auto;
+    }
+
+    .more-button {
+        width: 30em;
+        margin-top: 3em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+    }
+
 }
 
 @media only screen and (min-width : 1920px) {
+
+    .info-panel {
+        width: 55%;
+    }
+
+    .mainnav-items {
+        width: 60%;
+    }
 }
+
+/*===== +4K =====*/
+@media only screen and (min-width : 2560px) {
+    
+        .info-panel {
+            width: 53.5%;
+        }
+    
+        .mainnav-items {
+            width: 60%;
+        }
+
+        .section1 {
+            width: 100%;
+            padding: 0;
+            padding-top: 3em;
+        }
+        
+        .spotoftheweek {
+            height: 60%;
+            width: 60%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: auto;
+            background: rgb(243, 243, 243);
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10em;
+        }
+        
+        .sotw-left {
+            width: 60%;
+            margin: 0;
+            padding: 0;
+            align-self: center;
+        }
+        
+        #title-section1 {
+            margin-top: 0.5em;
+            text-align: center;
+            margin-bottom: 0.5em;
+            font-family: aventura;
+            text-transform: uppercase;
+            font-size: 2.5em;
+        }
+        
+        #kohphangan {
+            height: 20em;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .sotw-right {
+            width: 40%;
+            margin: 0;
+            padding: 0;
+            align-self: center;
+        }
+        
+        .sotw-text {
+            width: 60%;
+            margin: auto;
+        }
+    
+        .more-button {
+            width: 30em;
+            margin-top: 3em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2em;
+        }
+    }
