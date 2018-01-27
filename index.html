@@ -64,32 +64,59 @@
     <main>
         <div class="container-fluid section1">
             <div id="sotw" class="row spotoftheweek">
-                    <div class="col-md-5 sotw-left">
-                        <img id="kohphangan" src="img/svg/kohphanganlogo.svg" alt="Koh Phangan">
-                    </div>
-                    <div class="col sotw-right">
-                            <h1 id="title-section1">Spot of the Week</h1>
-                            <div class="sotw-text">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
-                                ipsum dolor sit amet. 
-                                <br><br> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
-                                sanctus est Lorem ipsum dolor sit amet. 
-                            </div>
-                            <button type="button" class="btn btn-primary bg-info more-button" data-toggle="button" aria-pressed="false" autocomplete="off">
-                            More about Koh Phangan
-                            </button>
-                    </div>
+                <div class="col-md-5 sotw-left">
+                    <img id="kohphangan" src="img/svg/kohphanganlogo.svg" alt="Koh Phangan">
                 </div>
+                <div class="col sotw-right">
+                    <h1 id="title-section1">Spot of the Week</h1>
+                        <div class="sotw-text">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
+                            ipsum dolor sit amet. 
+                            <br><br> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                            sanctus est Lorem ipsum dolor sit amet. 
+                        </div>
+                    <button type="button" class="btn btn-primary bg-info more-button" data-toggle="button" aria-pressed="false" autocomplete="off">
+                         More about Koh Phangan
+                    </button>
+                </div>
+            </div>
+
+            <div class="image-grid">
+                <div id="portfolio" class="portfolio">
+                    <div id="slide" class="grid-slide portfolio-item medium one">Infinity Resort</div>
+                    <div id="slide" class="grid-slide portfolio-item large one">Long Beach</div>
+                    <div id="slide" class="grid-slide portfolio-item medium two">Dream Landscape</div>
+                    <div id="slide" class="grid-slide portfolio-item small one">Sal Thao Beach</div>
+                    <div id="slide" class="grid-slide portfolio-item tall one">Kho Nhan Road</div>
+                    <div id="slide" class="grid-slide portfolio-item wide one">Paradise Bay</div>
+                    <div id="slide" class="grid-slide portfolio-item medial one">Neighbor Islands</div>
+                    <div id="slide" class="grid-slide portfolio-item medium three">Sunset Beach</div>
+                    <div id="slide" class="grid-slide portfolio-item medial two">Lost Cave</div>
+                </div>
+            </div>
+            <div class="second-image-grid">
+                <div id="portfolio" class="portfolio">
+                    <div id="slide" class="grid-slide portfolio-item giant one">Experience Snorkeling</div>
+                    <div id="slide" class="grid-slide portfolio-item medium four">Diving Tour</div>
+                    <div id="slide" class="grid-slide portfolio-item tall two">Cristal Beach</div>
+                    <div id="slide" class="grid-slide portfolio-item medial three">Jungle</div>
+                    <div id="slide" class="grid-slide portfolio-item small two">Haad Rin Beach</div>
+                    <div id="slide" class="grid-slide portfolio-item flat one">Northern Cliff</div>
+                    <div id="slide" class="grid-slide portfolio-item square one">Bloody Sunset</div>
+                </div>
+            </div>
+
+
         </div>
+
+
+
+
+
+
+
     </main>
-
-
-
-
-
-
-
 
 
     <footer>
@@ -106,6 +133,13 @@
             })
         })
     </script>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script>
+            window.sr = ScrollReveal();
+            sr.reveal('#sotw');
+            sr.reveal('#slide');
+            sr.reveal('#slide', { duration: 500 });
+        </script>
 
 
   </body>
