@@ -124,6 +124,11 @@
 /*=====SMARTPHONES=====*/
 /*== 480px ==*/
 @media only screen and (max-width : 480px) {
+
+    .info {
+        visibility: hidden;
+    }
+
     .mainnav-items {
         width: 100%;
         margin: 0;
