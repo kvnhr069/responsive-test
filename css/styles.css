@@ -227,6 +227,7 @@
     background-size: cover;
     padding: 0;
     padding-bottom: 3em;
+    height: 100vh;
 }
 
 .banner-title {
@@ -242,6 +243,7 @@
 .container.form {
     margin-top: 5em;
     width: 50%;
+    display: none;
 }
 
 .form {
