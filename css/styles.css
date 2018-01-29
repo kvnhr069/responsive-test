@@ -240,6 +240,30 @@
     color: rgb(26, 26, 26);
 }
 
+.optin-button {
+    margin-top: 2em;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.optin-trigger {
+    background: orange;
+    padding: 0.5em 2em;
+    border-radius: 2em;
+    color: white;
+    font-family: arial;
+    border: none;
+    transition: ease-in-out 200ms;
+}
+
+.optin-trigger:hover {
+    transform: scale(1.5);
+    transition: ease-in-out 200ms;
+}
+
 .container.form {
     margin-top: 5em;
     width: 50%;
