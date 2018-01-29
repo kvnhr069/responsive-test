@@ -11,6 +11,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/scrollreveal.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -30,6 +31,10 @@
                 <div class="info-panel">
                     <ul class="info-left">
                         <li class ="navtop-items margin"><a href="#"><i class="fa fa-globe" aria-hidden="true"></i> Language</a></li>
+                        <div class="language">                        
+                        <li><img class="flag" src="img/svg/flag-DE.svg" alt="German Flag"></li>
+                        <li><img class="flag" src="img/svg/flag-US.svg" alt="United States Flag"></li>
+                        </div>
                     </ul>
                     <ul class="info-right">
                         <li class="social-media facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -63,6 +68,9 @@
                 <button class="optin-trigger" type="button" id="optin-trigger">Get our free Travel Guide</button>
             </div>
             <div class="container form" id="opt-in">
+                <div class="close">
+                    <i id="closing-x" class="fa fa-times" aria-hidden="true"></i>
+                </div>
                 <div class="row">
                     <h1 id="form-title">Get your Free Travel Guide today!</h1>
                 </div>
@@ -280,8 +288,19 @@
     <!-- Removes Optin-Button and Slides Down Optin-Form -->
     <script>
         $('#optin-trigger').click(function() {
-            $('#optin-button').remove();
+            $('#optin-button').hide();
                 $('#opt-in').slideDown( "slow" ,function() {  
+                $('#closing-x').add();
+            });
+        });
+    </script>
+
+    <!-- Slides up Optin-Form and Adds Optin-Button -->
+    <script>
+        $('#closing-x').click(function() {
+            $('#opt-in').slideUp( "slow" ,function() {
+                $('#optin-button').show();
+                $('#closing-x').remove();
             });
         });
     </script>
@@ -293,6 +312,14 @@
                 alert('Thanks for submitting! You will receive your free Travel Guide within the next minutes!');
             });
         });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $
+        })
+    
+    
     </script>
 
   </body>

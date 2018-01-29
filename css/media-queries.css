@@ -1,0 +1,869 @@
+/*=============================*/
+/*======= MEDIA QUERIES =======*/
+/*=============================*/
+
+/*=====SMARTPHONES=====*/
+/*== 480px ==*/
+@media only screen and (max-width : 480px) {
+
+    .info {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .mainnav-items {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    .active {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner {
+        height: 100vh;
+    }
+
+    .banner-title {
+        margin-top: 0;
+    }
+
+    .section1 {
+        padding-top: 0;
+        border-top: 5px solid black;
+    }
+
+    .spotoftheweek {
+        box-shadow: none;
+        background: white;
+        width: 90%;
+    }
+
+    .sotw-left {
+        margin-top: 3em;
+    }
+
+    #kohphangan {
+        margin: auto;
+        width: 20em;
+        height: auto;
+    }
+
+    .sotw-right {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #title-section1 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .more-button {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image-grid {
+        margin-top: 2em;
+    }
+    
+    .second-image-grid {
+        margin-top: 1.4em;
+        margin-bottom: 5em;
+    }
+    
+    .portfolio {
+        width: 90%;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 0.8em;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .medial {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .medial.one {
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+
+    .medial.two {
+        grid-row: span 3;
+        grid-column: span 4;
+    }
+
+    .medial.three {
+        grid-row: span 3;
+        grid-column: span 3;
+    }
+    
+    .medium {
+        grid-row: span 2;
+        grid-column: span 4;
+    }
+
+    .medium.two {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    
+    .large {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    
+    .tall {
+        grid-row: span 3;
+        grid-column: span 1;
+    }
+    
+    .giant {
+        display: none;
+    }
+    
+    .square {
+        grid-row: span 2;
+        grid-column: span 3;
+    }
+
+    .square.one {
+        grid-row: span 2;
+        grid-column: span 4;
+    }
+    
+    .flat {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+    .flat.one {
+        grid-row: span 1;
+        grid-column: span 4;
+    }
+
+    .wide {
+        grid-row: span 3;
+        grid-column: span 1;
+    }
+
+    .container.form {
+        display: none;
+    }
+
+    .optin-button {
+        display: none;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-bottom: 25em;
+    }
+
+    .section-title {
+        margin-bottom: 2em;
+    }
+
+    .section-title h1 {
+        font-size: 2.3em;
+        text-align: center;
+    }
+
+    .border-title {
+        width: 15%;
+    }
+
+    .top-img {
+        width: 100%;
+    }
+
+    .top-description {
+        width: 100%;
+        margin: 0;
+        margin-top: 1em;
+    }
+
+    .top-description h2 {
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+/*== 481px - 767px ==*/
+@media only screen and (min-width: 481px) and (max-width : 767px) {
+
+    .info {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .mainnav-items {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    .active {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner {
+        height: 100vh;
+    }
+
+    .section1 {
+        padding-top: 0;
+        border-top: 5px solid black;
+    }
+
+    .spotoftheweek {
+        box-shadow: none;
+        background: white;
+        width: 90%;
+    }
+
+    .sotw-left {
+        margin-top: 3em;
+    }
+
+    #kohphangan {
+        margin: auto;
+        width: 20em;
+        height: auto;
+    }
+
+    .sotw-right {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #title-section1 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .more-button {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image-grid {
+        margin-top: 2em;
+    }
+    
+    .second-image-grid {
+        margin-top: 1.4em;
+        margin-bottom: 5em;
+    }
+    
+    .portfolio {
+        width: 90%;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 1em;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .medial {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .medial.one {
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+
+    .medial.two {
+        grid-row: span 3;
+        grid-column: span 4;
+    }
+
+    .medial.three {
+        grid-row: span 3;
+        grid-column: span 3;
+    }
+    
+    .medium {
+        grid-row: span 2;
+        grid-column: span 4;
+    }
+
+    .medium.two {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    
+    .large {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    
+    .tall {
+        grid-row: span 3;
+        grid-column: span 1;
+    }
+    
+    .giant {
+        display: none;
+    }
+    
+    .square {
+        grid-row: span 2;
+        grid-column: span 3;
+    }
+
+    .square.one {
+        grid-row: span 2;
+        grid-column: span 4;
+    }
+    
+    .flat {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+    .flat.one {
+        grid-row: span 1;
+        grid-column: span 4;
+    }
+
+    .wide {
+        grid-row: span 3;
+        grid-column: span 1;
+    }
+
+    .container.form {
+        display: none;
+    }
+
+    .optin-button {
+        display: none;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-bottom: 20em;
+    }
+
+    .section-title {
+        margin-bottom: 2em;
+    }
+
+    .section-title h1 {
+        font-size: 2.3em;
+        text-align: center;
+    }
+
+    .border-title {
+        width: 15%;
+    }
+
+    .top-img {
+        width: 100%;
+    }
+
+    .top-description {
+        width: 100%;
+        margin: 0;
+        margin-top: 1em;
+    }
+
+    .top-description h2 {
+        font-size: 1.7em;
+        text-align: justify;
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width: 1023px) {
+    .mainnav-items {
+        width: 100%;
+        margin: 0;
+    }
+
+    .info-panel {
+        width: 96%;
+    }
+
+    .section1 {
+        padding-top: 0;
+        border-top: 5px solid black;
+    }
+
+    .spotoftheweek {
+        margin-top: 2em;
+        width: 90%;
+        flex-direction: column;
+        height: 50em;
+    }
+
+    .sotw-left {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #kohphangan {
+        align-self: center;
+        margin: 0;
+        width: 25em;
+        height: auto;
+    }
+
+    .sotw-right {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #title-section1 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .more-button {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image-grid {
+        margin-top: 2em;
+    }
+    
+    .second-image-grid {
+        margin-top: 1.4em;
+        margin-bottom: 5em;
+    }
+    
+    .portfolio {
+        width: 90%;
+    }
+
+    .container.form {
+        margin-top: 5em;
+        width: 90%;
+    }
+
+    #form-title {
+        width: 100%;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }    
+
+    .col.ebook {
+        width: 55%;
+    }
+    
+    .col.ebook img {
+        height: 25em;
+        width: auto;
+        align-self: center;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-bottom: 15em;
+    }
+
+    .section-title {
+        margin-bottom: 2em;
+    }
+
+    .section-title h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .border-title {
+        width: 15%;
+    }
+
+    .top-img {
+        width: 100%;
+    }
+
+    .top-description {
+        width: 100%;
+        margin: 0;
+        margin-top: 1em;
+    }
+
+    .top-description h2 {
+        font-size: 1.7em;
+        text-align: justify;
+    }
+
+
+}
+
+
+/*===== TABLETS AND LAPTOPS =====*/
+@media only screen and (min-width : 1024px) and (max-width: 1439px) {
+
+    .info-panel {
+        width: 92.5%;
+    }
+
+    .mainnav-items {
+        width: 100%;
+    }
+
+    .section1 {
+        width: 100%;
+        padding: 0;
+        padding-top: 3em;
+    }
+    
+    .spotoftheweek {
+        height: 60%;
+        width: 90%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: auto;
+        background: rgb(243, 243, 243);
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+    }
+    
+    .sotw-left {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+    }
+    
+    #title-section1 {
+        margin-top: 0.5em;
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-family: aventura;
+        text-transform: uppercase;
+        font-size: 2.5em;
+    }
+    
+    #kohphangan {
+        height: 15em;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sotw-right {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+    }
+    
+    .sotw-text {
+        width: 90%;
+        margin: auto;
+    }
+
+    .more-button {
+        width: 30em;
+        margin-top: 3em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+    }
+
+    .image-grid {
+        margin-top: 2em;
+    }
+    
+    .second-image-grid {
+        margin-top: 1.4em;
+        margin-bottom: 5em;
+    }
+    
+    .portfolio {
+        width: 90%;
+    }
+
+    .container.form {
+        margin-top: 5em;
+        width: 90%;
+    }
+
+    #form-title {
+        width: 100%;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }    
+
+    .col.ebook {
+        width: 55%;
+    }
+    
+    .col.ebook img {
+        height: 25em;
+        width: auto;
+        align-self: center;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-bottom: 3em;
+    }
+
+
+}
+
+@media only screen and (min-width : 1440px) and (max-width: 1919px) {
+
+    .info-panel {
+        width: 73.3%;
+    }
+
+    .mainnav-items {
+        width: 80%;
+    }
+
+
+    .section1 {
+        width: 100%;
+        padding: 0;
+        padding-top: 2em;
+        padding-bottom: 3em;
+    }
+    
+    .spotoftheweek {
+        height: 60%;
+        width: 70%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: auto;
+        background: rgb(243, 243, 243);
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2em;
+    }
+    
+    .sotw-left {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+    }
+    
+    #title-section1 {
+        margin-top: 0.5em;
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-family: aventura;
+        text-transform: uppercase;
+        font-size: 2.5em;
+    }
+    
+    #kohphangan {
+        height: 15em;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sotw-right {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        align-self: center;
+    }
+    
+    .sotw-text {
+        width: 90%;
+        margin: auto;
+    }
+
+    .more-button {
+        width: 30em;
+        margin-top: 3em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+    }
+
+    .image-grid {
+        margin-top: 2em;
+    }
+    
+    .second-image-grid {
+        margin-top: 1.4em;
+        margin-bottom: 5em;
+    }
+    
+    .portfolio {
+        width: 70%;
+    }
+
+    .container.form {
+        margin-top: 5em;
+        width: 90%;
+    }
+
+    #form-title {
+        width: 100%;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }    
+
+    .col.ebook {
+        width: 55%;
+    }
+    
+    .col.ebook img {
+        height: 30em;
+        width: auto;
+        align-self: center;
+    }
+
+}
+
+@media only screen and (min-width : 1920px) {
+
+    .info-panel {
+        width: 55%;
+    }
+
+    .mainnav-items {
+        width: 60%;
+    }
+
+    #form-title {
+        width: 100%;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }    
+}
+
+/*===== +4K =====*/
+@media only screen and (min-width : 2560px) {
+    
+        .info-panel {
+            width: 53.5%;
+        }
+    
+        .mainnav-items {
+            width: 60%;
+        }
+
+        .section1 {
+            width: 100%;
+            padding: 0;
+            padding-top: 3em;
+        }
+        
+        .spotoftheweek {
+            height: 60%;
+            width: 60%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: auto;
+            background: rgb(243, 243, 243);
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10em;
+        }
+        
+        .sotw-left {
+            width: 60%;
+            margin: 0;
+            padding: 0;
+            align-self: center;
+        }
+        
+        #title-section1 {
+            margin-top: 0.5em;
+            text-align: center;
+            margin-bottom: 0.5em;
+            font-family: aventura;
+            text-transform: uppercase;
+            font-size: 2.5em;
+        }
+        
+        #kohphangan {
+            height: 20em;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .sotw-right {
+            width: 40%;
+            margin: 0;
+            padding: 0;
+            align-self: center;
+        }
+        
+        .sotw-text {
+            width: 60%;
+            margin: auto;
+        }
+    
+        .more-button {
+            width: 30em;
+            margin-top: 3em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2em;
+        }
+
+        #form-title {
+            width: 100%;
+            text-align: center;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }    
+}
