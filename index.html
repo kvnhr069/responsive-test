@@ -58,7 +58,7 @@
             <div>
                 <h1 class="banner-title">DISCOVER THAILAND</h1>
             </div>
-            <div class="container form">
+            <div class="container form" id="opt-in">
                 <div class="row">
                     <h1 id="form-title">Get your Free Travel Guide today!</h1>
                 </div>
@@ -269,5 +269,14 @@
             sr.reveal('.top-img', { duration: 500 });
             sr.reveal('.top-img', { origin: left });
         </script>
+
+    <script>
+        $(document).ready(function() {
+            $('#opt-in').slideDown( "slow" ,function() {
+
+            });
+        });
+    
+    </script>
 
   </body>
