@@ -223,9 +223,10 @@
     background: linear-gradient(to bottom, rgba(0, 217, 255, 0.411), transparent),
                 url(https://images.unsplash.com/photo-1468082547792-d37c6c74003e?ixlib=rb-0.3.5&s=3d0350b28df366b170719a7d6c07aa5e&auto=format&fit=crop&w=1955&q=80);
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
     padding: 0;
+    padding-bottom: 3em;
 }
 
 .banner-title {
@@ -238,8 +239,71 @@
     color: rgb(26, 26, 26);
 }
 
+.container.form {
+    margin-top: 5em;
+    width: 50%;
+}
 
+.form {
+    background: rgba(255, 255, 255, 0.548);
+    width: 100%;
+    border-radius: 1em;
+}
 
+.row.form {
+    background: none;
+}
+
+.col.ebook {
+    display: flex;
+    justify-content: center;
+}
+
+.col.ebook img {
+    height: 27em;
+    width: auto;
+    align-self: center;
+}
+
+#form-title {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.container.form.col {
+    display: flex;
+    justify-content: center;
+}
+
+.ebook-form {
+    text-align: justify;
+    font-family: arial;
+}
+
+.form-input {
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.newsletter {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    margin-right: 0.5em;
+}
+
+.newsletter-info {
+    font-size: 0.7em;
+}
+
+.sign-up {
+    width: 100%;
+    background: orange;
+    border: orange;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    height: 2em;
+}
 
 /*=======================*/
 /*======= SECTION =======*/
@@ -323,7 +387,7 @@
     height: 800px;
     justify-content: center;
     margin-top: 1.5em;
-    margin-bottom: 5em;
+    margin-bottom: 10em;
 }
 
 .portfolio {
@@ -726,7 +790,94 @@
 
 
 
+.section-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
+}
 
+#section-title {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.border-title {
+    width: 10%;
+    align-self: center;
+    border-bottom: 2px solid black;
+}
+
+.wrapper {
+    width: 71%;
+    height: 15em;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+.top-img {
+    width: 30%;
+    height: 100%;
+    border-radius: 1em;
+}
+
+#img1 {
+    background: url(http://static.asiawebdirect.com/m/.imaging/678x452/website/phuket/portals/kosamui-com/homepage/ko-phangan/best-things-to-do-in-koh-phangan/allParagraphs/00/top10Set/0/image.jpg);
+    background-size: cover;
+}
+
+#img2 {
+    background: url(https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e796ac1a98a8f907a9d8175b1577aec3&auto=format&fit=crop&w=1950&q=80);
+    background-size: cover;
+}
+
+#img3 {
+    background: url(http://static.asiawebdirect.com/m/phuket/portals/kosamui-com/homepage/ko-phangan/haad-rin/pagePropertiesImage/haad-rin.jpg.jpg);
+    background-size: cover;
+}
+
+#img4 {
+    background: url(https://images.unsplash.com/photo-1505325681473-5e712b2eadca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=42268883c25739c07af3d28d8f2030de&auto=format&fit=crop&w=1267&q=80); 
+    background-size: cover;
+}
+
+#img5 {
+    background: url(https://images.unsplash.com/photo-1482685945432-29a7abf2f466?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f4cadd6e2f2c8a070c52cf4ab7ad3f2&auto=format&fit=crop&w=1366&q=80);
+    background-size: cover;
+}
+
+#img6 {
+    background: url(http://www.slipnflyparty.com/assets/img/gallery/fac-001-1200x900.jpg);
+    background-size: cover;
+}
+
+#img7 {
+    background: url(https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/16472859_1396581817053526_2973438612749417048_n.jpg?oh=fc16c7af7423eb4770b55349482c522f&oe=5ADA2F77);
+    background-size: cover;
+}
+
+#img8 {
+    background: url(https://images.unsplash.com/photo-1485873174476-292bc2df1cc0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a9dc98ab145c4725b6ed02dd78e41527&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+}
+
+#img9 {
+    background: url(https://images.unsplash.com/photo-1506238217901-461cd53b83b0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=953bb1eb0498a8e28aa10c4e289b1719&auto=format&fit=crop&w=1350&q=80); 
+    background-size: cover;
+}
+
+#img10 {
+    background: url(https://images.unsplash.com/photo-1503764654157-72d979d9af2f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=71cdddf5cc615224cf2c26614d20154d&auto=format&fit=crop&w=1353&q=80);
+    background-size: cover;
+}
+
+.top-description {
+    width: 60%;
+    margin-left: 2em;
+    text-align: justify;
+    align-self: center;
+}
 
 
 /*=============================*/
@@ -760,6 +911,10 @@
         padding: 0;
         display: flex;
         flex-direction: column;
+    }
+
+    .banner {
+        height: 100vh;
     }
 
     .banner-title {
@@ -892,6 +1047,47 @@
         grid-row: span 3;
         grid-column: span 1;
     }
+
+    .container.form {
+        display: none;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-bottom: 25em;
+    }
+
+    .section-title {
+        margin-bottom: 2em;
+    }
+
+    .section-title h1 {
+        font-size: 2.3em;
+        text-align: center;
+    }
+
+    .border-title {
+        width: 15%;
+    }
+
+    .top-img {
+        width: 100%;
+    }
+
+    .top-description {
+        width: 100%;
+        margin: 0;
+        margin-top: 1em;
+    }
+
+    .top-description h2 {
+        font-size: 1.7em;
+        text-align: center;
+    }
+
 }
 
 
@@ -924,6 +1120,9 @@
         padding: 0;
         display: flex;
         flex-direction: column;
+    }
+    .banner {
+        height: 100vh;
     }
 
     .section1 {
@@ -1053,6 +1252,46 @@
         grid-column: span 1;
     }
 
+    .container.form {
+        display: none;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-bottom: 20em;
+    }
+
+    .section-title {
+        margin-bottom: 2em;
+    }
+
+    .section-title h1 {
+        font-size: 2.3em;
+        text-align: center;
+    }
+
+    .border-title {
+        width: 15%;
+    }
+
+    .top-img {
+        width: 100%;
+    }
+
+    .top-description {
+        width: 100%;
+        margin: 0;
+        margin-top: 1em;
+    }
+
+    .top-description h2 {
+        font-size: 1.7em;
+        text-align: justify;
+    }
+
 }
 
 @media only screen and (min-width : 768px) and (max-width: 1023px) {
@@ -1120,6 +1359,66 @@
     .portfolio {
         width: 90%;
     }
+
+    .container.form {
+        margin-top: 5em;
+        width: 90%;
+    }
+
+    #form-title {
+        width: 100%;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }    
+
+    .col.ebook {
+        width: 55%;
+    }
+    
+    .col.ebook img {
+        height: 25em;
+        width: auto;
+        align-self: center;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-bottom: 15em;
+    }
+
+    .section-title {
+        margin-bottom: 2em;
+    }
+
+    .section-title h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .border-title {
+        width: 15%;
+    }
+
+    .top-img {
+        width: 100%;
+    }
+
+    .top-description {
+        width: 100%;
+        margin: 0;
+        margin-top: 1em;
+    }
+
+    .top-description h2 {
+        font-size: 1.7em;
+        text-align: justify;
+    }
+
+
 }
 
 
@@ -1205,6 +1504,37 @@
     .portfolio {
         width: 90%;
     }
+
+    .container.form {
+        margin-top: 5em;
+        width: 90%;
+    }
+
+    #form-title {
+        width: 100%;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }    
+
+    .col.ebook {
+        width: 55%;
+    }
+    
+    .col.ebook img {
+        height: 25em;
+        width: auto;
+        align-self: center;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-bottom: 3em;
+    }
+
 
 }
 
@@ -1292,6 +1622,28 @@
         width: 70%;
     }
 
+    .container.form {
+        margin-top: 5em;
+        width: 90%;
+    }
+
+    #form-title {
+        width: 100%;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }    
+
+    .col.ebook {
+        width: 55%;
+    }
+    
+    .col.ebook img {
+        height: 30em;
+        width: auto;
+        align-self: center;
+    }
+
 }
 
 @media only screen and (min-width : 1920px) {
@@ -1303,6 +1655,13 @@
     .mainnav-items {
         width: 60%;
     }
+
+    #form-title {
+        width: 100%;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }    
 }
 
 /*===== +4K =====*/
@@ -1374,4 +1733,11 @@
             margin-right: auto;
             margin-bottom: 2em;
         }
-    }
+
+        #form-title {
+            width: 100%;
+            text-align: center;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }    
+}
